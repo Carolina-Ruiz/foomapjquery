@@ -27,7 +27,7 @@
 				<div class="column">
 					<iframe class="thumbnail img-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62523112.01406334!2d-111.68263479507961!3d-15.610283760438165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x90f99effb40af535%3A0xd2673dbf02a5b69c!2sLatin+America!5e0!3m2!1ses-419!2scl!4v1512399612050" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
-				<div class="column">
+				<div class="column box">
 					<h3 class="title is-3">Comida cerca de ti</h3>
 					<select id="select">  
 						<option value="value0">Elige tu comida</option>
@@ -62,27 +62,27 @@
 					  </div>
 					</div> -->
 				</div> 
-				<div class="columns pictures">
-					<div class="column is-4 eat">
+				<div class="columns is-mobile pictures">
+					<div class="column is-4">
 						<figure class="image is-96x96">
-						  	<img src="assets/img/vegetales.jpg" class="comida">
+						  	<img src="assets/img/vegetales.jpg" class="comida" id="v">
 						  	<div class="comida-overlay">
 							    <p>Del huerto</p>
 							</div>
 						</figure>	
 					</div>
-				    <div class="column">
+				    <div class="column is-4">
 						<figure class="image is-96x96">
-					  		<img src="assets/img/buffet.jpeg" class="comida">
+					  		<img src="assets/img/buffet.jpeg" class="comida" id="b">
 					  		<div class="comida-overlay">
 							    <p> ¡Tenedor libre! </p>
 							</div>
 						</figure>
 				    </div>
 
-				    <div class="column">
+				    <div class="column is-4">
 				    	<figure class="image is-96x96">
-					  		<img src="assets/img/parrillas.jpeg" class="comida">
+					  		<img src="assets/img/parrillas.jpeg" class="comida" id="p">
 					  		<div class="comida-overlay">
 							    <p>Buenos Amigos</p>
 							</div>
@@ -96,13 +96,13 @@
 
 			<!--modal vegetariano-->
 			<div class="column">
-				<div id="ex1" class="modal1">
+				<div id="ex1" class="modal 1 is-hidden">
 				<a rel="modal:close">
 	    		    <span class="icon is-small">
 	      				<i class="fa fa-times" aria-hidden="true"></i>
 				    </span>
 				 </a>
-			    <h3 class="title is-3">Vegetales</h3>
+			    <h3 class="title is-3">Del huerto</h3>
 				<h6 class="title is-6">Diversas vitaminas</h6>
 				<div class="column">
 				    <figure class="image is-96x96">
@@ -117,23 +117,23 @@
 						<p>Abierto de lunes a domindo las 24 horas</p>
 					</div>
 				</div>
-				</div>
-				<!-- Link to open the modal -->
+				<!-- Link to open the modal 
 				<p><a href="#ex1" rel="modal:open">Open Modal</a></p>
 
+				</div>
+				
 			</div>
 
 
-
-			<!--modal Buffet-->
+				modal Buffet
 			<div class="column">
-				<div id="ex1" class="modal2">
+				<div id="ex1" class="modal 2">
 			  	<a rel="modal:close">
 	    		    <span class="icon is-small">
 	      				<i class="fa fa-times" aria-hidden="true"></i>
 				    </span>
 				 </a>
-					<h3 class="title is-3">Buffet</h3>
+					<h3 class="title is-3">¡Tenedor libre!</h3>
 				    <h6 class="title is-6">Come todo lo que quieras</h6>
 				    <div class="column">
 				    	<figure class="image is-96x96">
@@ -148,19 +148,20 @@
 							<p>Abierto los miercoles de 00:00 a 01:00</p>
 						</div>
 					</div>
+				<p><a href="#ex1" rel="modal:open">Open Modal</a></p>
 			</div>
-			<p><a href="#ex1" rel="modal:open">Open Modal</a></p>
 			</div>
+			
 
-			<!--modal Parrilladas-->
+			<!--modal Parrilladas
 			<div class="column">
-				<div id="ex1" class="modal3">
+				<div id="ex1" class="modal 3">
 			    <a rel="modal:close">
 	    		    <span class="icon is-small">
 	      				<i class="fa fa-times" aria-hidden="true"></i>
 				    </span>
 				 </a>
-					<h3 class="title is-3">Parrillas</h3>
+					<h3 class="title is-3">Buenos Amigos</h3>
 				    <h6 class="title is-6">Diversas carnes desde Brasil, Argentina y Chile</h6>
 				  	<div class="column">
 					 	<figure class="image is-96x96">
@@ -175,10 +176,11 @@
 							<p>Abierto cada Lunes de 18:00 a 22:00</p>
 						</div>
 					</div>
+				<p><a href="#ex1" rel="modal:open">Open Modal</a></p>
 			</div>
-			<p><a href="#ex1" rel="modal:open">Open Modal</a></p>
 			</div>
-
+			
+-->
 		</div>
 	</div>
 	<script src="assets/js/app.js"></script>
