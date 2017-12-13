@@ -1,0 +1,39 @@
+.columns {
+	padding: 3em 0 0 1em;
+	text-align: center;
+}
+
+.cero {
+	background: #2F2F2F;
+	height: 100vh;
+	padding: 3em 0 0 1em;
+}
+.title {
+	color: orange;
+}
+
+.thumbnail {
+	height: 50%;
+	width: 50%;
+}
+
+.comida {
+	background-repeat: no-repeat;
+	float: left;
+	margin: 20px 12px 0 0;
+	/*height: 10em;
+	width: 10em;*/
+
+}
+
+.comida-overlay {
+	background-color: #FFF; 
+	height: 5em;
+	width: 6em;
+
+}
+
+
+#ex1 {
+	padding: 0 0 0 0;
+}

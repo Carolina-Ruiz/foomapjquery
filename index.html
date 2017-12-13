@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	<title>Footmap</title>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+
+	<!-- jQuery Modal -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css"/>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+	<div class="columns cero">
+		<h1 class="title is-1">Foodmap</h1>
+	</div>
+	<div class="columns uno">
+		<div class="columns is-mobile">
+			<section>
+				<div class="column">
+					 <h1 class="title is-1">Foodmap</h1>
+				</div>
+				<div class="column">
+					<iframe class="thumbnail img-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62523112.01406334!2d-111.68263479507961!3d-15.610283760438165!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x90f99effb40af535%3A0xd2673dbf02a5b69c!2sLatin+America!5e0!3m2!1ses-419!2scl!4v1512399612050" width="500" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</div>
+				<div class="column">
+					<h3 class="title is-3">Comida cerca de ti</h3>
+					<select id="select">  
+						<option value="value0">Elige tu comida</option>
+						<option value="value1">Comida Vegetariana</option>
+			             <option value="value2">Buffet</option>
+			             <option value="value3">Parrilladas</option> 
+			        </select>
+					<!--<div class="dropdown is-active">
+					    <div class="dropdown-trigger">
+						    <button class="btn-menu" aria-haspopup="true" aria-controls="dropdown-menu">
+							    <span>filtrar restaurantes</span>
+							    <span class="icon is-small">
+							         <i class="fa fa-search" aria-hidden="true"></i>
+							      </span>
+						    </button>
+					  	</div>
+					<div class="dropdown-menu" id="dropdown-menu" role="menu">
+					    <div class="dropdown-content">
+						    
+						    <a id="eat1" class="dropdown-item">
+						        Comida Vegetariana
+						    </a>
+						   
+						    <a id="eat2" class="dropdown-item">
+						       Buffet
+						    </a>
+						   
+						    <a id="eat3" class="dropdown-item">
+						        Parrilladas
+						    </a>
+					    </div>
+					  </div>
+					</div> -->
+				</div> 
+				<div class="columns pictures">
+					<div class="column is-4 eat">
+						<figure class="image is-96x96">
+						  	<img src="assets/img/vegetales.jpg" class="comida">
+						  	<div class="comida-overlay">
+							    <p>Del huerto</p>
+							</div>
+						</figure>	
+					</div>
+				    <div class="column">
+						<figure class="image is-96x96">
+					  		<img src="assets/img/buffet.jpeg" class="comida">
+					  		<div class="comida-overlay">
+							    <p> ¡Tenedor libre! </p>
+							</div>
+						</figure>
+				    </div>
+
+				    <div class="column">
+				    	<figure class="image is-96x96">
+					  		<img src="assets/img/parrillas.jpeg" class="comida">
+					  		<div class="comida-overlay">
+							    <p>Buenos Amigos</p>
+							</div>
+						</figure>
+				    </div>
+				</div>
+			</section>
+
+
+
+
+			<!--modal vegetariano-->
+			<div class="column">
+				<div id="ex1" class="modal1">
+				<a rel="modal:close">
+	    		    <span class="icon is-small">
+	      				<i class="fa fa-times" aria-hidden="true"></i>
+				    </span>
+				 </a>
+			    <h3 class="title is-3">Vegetales</h3>
+				<h6 class="title is-6">Diversas vitaminas</h6>
+				<div class="column">
+				    <figure class="image is-96x96">
+					  	<img src="assets/img/mapavegan.jpg">
+					</figure>
+				</div>
+				<div class="column">
+					<div class="column is-6">
+						<p>Av. Vegan #123</p>
+					</div>
+					<div class="column">
+						<p>Abierto de lunes a domindo las 24 horas</p>
+					</div>
+				</div>
+				</div>
+				<!-- Link to open the modal -->
+				<p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+
+			</div>
+
+
+
+			<!--modal Buffet-->
+			<div class="column">
+				<div id="ex1" class="modal2">
+			  	<a rel="modal:close">
+	    		    <span class="icon is-small">
+	      				<i class="fa fa-times" aria-hidden="true"></i>
+				    </span>
+				 </a>
+					<h3 class="title is-3">Buffet</h3>
+				    <h6 class="title is-6">Come todo lo que quieras</h6>
+				    <div class="column">
+				    	<figure class="image is-96x96">
+					  		<img src="assets/img/mapabufet.jpeg">
+						</figure>
+					</div>
+					<div class="column">
+					    <div class="column is-6">
+							<p>Av. Detodo #1234</p>
+						</div>
+						 <div class="column">
+							<p>Abierto los miercoles de 00:00 a 01:00</p>
+						</div>
+					</div>
+			</div>
+			<p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+			</div>
+
+			<!--modal Parrilladas-->
+			<div class="column">
+				<div id="ex1" class="modal3">
+			    <a rel="modal:close">
+	    		    <span class="icon is-small">
+	      				<i class="fa fa-times" aria-hidden="true"></i>
+				    </span>
+				 </a>
+					<h3 class="title is-3">Parrillas</h3>
+				    <h6 class="title is-6">Diversas carnes desde Brasil, Argentina y Chile</h6>
+				  	<div class="column">
+					 	<figure class="image is-96x96">
+						  	<img src="assets/img/mapaparrilla.jpg">
+						</figure>
+				 	 </div>
+				 	 <div class="column">
+					    <div class="column is-6">
+							<p>Av. Perrito #010</p>
+						</div>
+						 <div class="column">
+							<p>Abierto cada Lunes de 18:00 a 22:00</p>
+						</div>
+					</div>
+			</div>
+			<p><a href="#ex1" rel="modal:open">Open Modal</a></p>
+			</div>
+
+		</div>
+	</div>
+	<script src="assets/js/app.js"></script>
+</body>
+</html>
